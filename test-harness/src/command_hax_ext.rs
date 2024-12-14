@@ -86,9 +86,9 @@ impl CommandHaxExt for Command {
         // [cargo run] (and thus also [cargo test]) sets dynamic
         // library paths, which causes some issues with dependencies
         // when compiling without rustup
-        for env in ["DYLD_FALLBACK_LIBRARY_PATH", "LD_LIBRARY_PATH"] {
-            cmd.env_remove(env);
-        }
+        // for env in ["DYLD_FALLBACK_LIBRARY_PATH", "LD_LIBRARY_PATH"] {
+        //     cmd.env_remove(env);
+        // }
         cmd
     }
 }

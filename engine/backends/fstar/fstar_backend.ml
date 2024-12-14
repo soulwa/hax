@@ -1764,7 +1764,6 @@ module TransformToInputLanguage =
   |> Phases.Drop_sized_trait
   |> Phases.Simplify_question_marks
   |> Phases.And_mut_defsite
-  |> Phases.Reconstruct_asserts
   |> Phases.Reconstruct_for_loops
   |> Phases.Reconstruct_while_loops
   |> Phases.Direct_and_mut

@@ -350,7 +350,7 @@ open Phase_utils
 module TransformToInputLanguage =
   [%functor_application
   Phases.Reject.RawOrMutPointer Features.Rust |> Phases.Reject.Unsafe
-  |> Phases.And_mut_defsite |> Phases.Reconstruct_asserts
+  |> Phases.And_mut_defsite 
   |> Phases.Reconstruct_for_loops |> Phases.Direct_and_mut |> Phases.Drop_blocks
   |> Phases.Reject.Continue |> Phases.Drop_references |> Phases.Bundle_cycles
   |> RejectNotEC]

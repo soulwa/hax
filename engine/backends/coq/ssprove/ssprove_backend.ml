@@ -571,7 +571,6 @@ module TransformToInputLanguage (* : PHASE *) =
     Phases.Reject.Unsafe(Features.Rust)
     |> Phases.Reject.RawOrMutPointer
     |> Phases.And_mut_defsite
-    |> Phases.Reconstruct_asserts
     |> Phases.Reconstruct_for_loops
     |> Phases.Direct_and_mut
     |> Phases.Reject.Arbitrary_lhs
